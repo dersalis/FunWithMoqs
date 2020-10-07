@@ -1,0 +1,8 @@
+ dotnet new sln -n Shop
+ dotnet new webapi -n Shop
+ dotnet sln add Shop/Shop.csproj
+ dotnet new nunit -n Shop.Tests
+ dotnet sln add Shop.Tests/Shop.Tests.csproj
+ dotnet add Shop.Tests/Shop.Tests.csproj reference Shop/Shop.csproj
+ add package moq
+ 
